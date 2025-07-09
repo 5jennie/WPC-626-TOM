@@ -101,7 +101,7 @@
   /* 아랫쪽 간격 mb */
   margin-bottom: 40px;
 }
-/* 스페션 내용 */
+/* 스페셜 내용 */
 .special-box p {
   line-height: 1.7;
 }
@@ -128,6 +128,26 @@
   /* 줄간격 lh - 숫자값은 배수임! */
   line-height: 1.7;
 }
+
+/* mark요소 디자인변 */
+.contents mark {
+  /* 기존 inline에서 block으로 변경! */
+  display: block;
+  
+  /* 박스설정 */
+  background-color: #e7e7e7;
+  margin: 20px 100px;
+  padding: 60px;
+  border-bottom: 2px solid #222;
+  border-top: 2px solid #222;
+
+  /* 글자설정 */
+  font-family: "Jua", sans-serif;
+  font-size: 28px;
+  color: darkorange;
+  text-shadow: 2px 2px 2px #00000073;
+}
+
 /* 2-6. 기자정보 */
 .reporter {
   font-size: 16px;
@@ -161,19 +181,19 @@
 
 /* 버튼 a 마우스 오버시
 -> 가상클래스 :hover사용! */
-.article-link a:hover{
-    /* 배경색 bgc */
-    background-color: lightgreen;
-    /* 박스그림자 bxsh
+.article-link a:hover {
+  /* 배경색 bgc */
+  background-color: lightgreen;
+  /* 박스그림자 bxsh
     box-shadow: 
     inset(내부그림자) x축 y축 블러 확장 그림자색; 
     -> 글자그림자에는 없는 "확장"(spread)가 있음
     즉, 그림자를 크게 만들 수 있음!
     그리고 콤마로 설정을 연결하면 여러개의 그림자 사용가능!
     */
-    box-shadow: 
-    /* 내부그림자 */
-    inset 0 0 5px 5px #0062ffb4,
-    /* 외부그림자 */
-    5px 5px 3px #00000052;
+  box-shadow: 
+    /* 내부그림자 */ inset
+      0 0 5px 5px #0062ffb4,
+    /* 외부그림자 */ 5px 5px 3px
+      #00000052;
 }
