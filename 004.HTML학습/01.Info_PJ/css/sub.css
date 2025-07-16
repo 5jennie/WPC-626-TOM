@@ -263,6 +263,10 @@
   border-radius: 20px;
   background-color: #ededed;
   margin-bottom: 17px;
+  /* 배경 그라데이션 */
+  background-image: linear-gradient(to right, lightblue, transparent);
+  /* 최대크기 설정 */
+    max-width: 300px;
 }
 
 
