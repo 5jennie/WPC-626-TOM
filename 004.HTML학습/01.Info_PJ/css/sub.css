@@ -256,17 +256,42 @@
 
 /* 뉴스 공통 제목 디자인 */
 .news-box h3 {
-  display: inline-block;
+  /* display: inline-block; */
   font-size: 25px;
   padding: 15px;
-  border: 2px solid gray;
-  border-radius: 20px;
-  background-color: #ededed;
+  /* border: 2px solid gray; */
+  /* border-radius: 20px; */
+  /* background-color: #ededed; */
   margin-bottom: 17px;
   /* 배경 그라데이션 */
   background-image: linear-gradient(to right, lightblue, transparent);
   /* 최대크기 설정 */
     max-width: 300px;
+}
+
+/* 뉴스 공통 a링크 */
+.news-box a{
+  font-size: 18px;
+  line-height: 38px;
+}
+/* a 오버시 가상클래스 :hover  */
+.news-box a:hover {
+  /* 글자색, 글자그림자 적용! */
+  color: hotpink;
+  text-shadow: 1px 1px 1px #0000007e;
+}
+
+/* 테크뉴스 파트
+가상요소를 사용하여 앞에 아이콘 넣기
+  앞에 넣기 ::before
+  뒤에 넣기 ::after
+  -> 필수 속성 ->>> content
+*/
+.tech-news a::before {
+  content: '😍';
+}
+.tech-news a::after {
+  content: '🎃';
 }
 
 
