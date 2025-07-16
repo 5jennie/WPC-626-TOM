@@ -133,7 +133,7 @@
 .contents mark {
   /* 기존 inline에서 block으로 변경! */
   display: block;
-  
+
   /* 박스설정 */
   background-color: #e7e7e7;
   margin: 20px 100px;
@@ -198,23 +198,25 @@
       #00000052;
 }
 
-
 /* 기사 설명 공통 박스 디자인 */
 .desc-box {
-    border-top: 2px dashed #ccc;
-    padding: 20px;
-    margin-top: 50px;
+  /* 경계선을 위와 아래만 설정함! */
+  border-top: 2px dashed #ccc;
+  border-bottom: 2px dashed #ccc;
+
+  padding: 20px;
+  margin-top: 50px;
 }
 
 /* 기사 설명 공통 제목 디자인 */
 .desc-box h4 {
-    display: inline-block;
-    font-size: 25px;
-    padding: 15px;
-    border: 2px solid gray;
-    border-radius: 20px;
-    background-color: #ededed;
-    margin-bottom: 17px;
+  display: inline-block;
+  font-size: 25px;
+  padding: 15px;
+  border: 2px solid gray;
+  border-radius: 20px;
+  background-color: #ededed;
+  margin-bottom: 17px;
 }
 
 /* 기사 설명 공통 내용박스 디자인
@@ -227,22 +229,59 @@
 .desc-box h4 + * {
   font-size: 18px;
   line-height: 1.7;
+  /* 양쪽정렬은 text-align:justify 로 설정함! */
+  text-align: justify;
+}
+
+/* 인용블록 박스 */
+.quote-box img {
+  width: 200px;
+  /* float속성을 인라인요소에 사용할 경우
+    나자신은 설정한 위치에 오고 다른인라인 요소는
+    그 옆으로 흘러간다. 여기서는 이미지의 글자는
+    한줄만 옆에 오는데 이미지 높이 만큼 글자가
+    옆으로 흘러가게 할때 사용한다! */
+  float: right;
+  margin-left: 20px;
+  border-radius: 20px;
+  box-shadow: 8px 8px 7px #00000057;
 }
 
 /* 뉴스 공통 박스 디자인 */
 .news-box {
-    border-top: 2px dashed #ccc;
-    padding: 20px;
-    margin-top: 50px;
+  border-top: 2px dashed #ccc;
+  padding: 20px;
+  margin-top: 50px;
 }
 
 /* 뉴스 공통 제목 디자인 */
 .news-box h3 {
-    display: inline-block;
-    font-size: 25px;
-    padding: 15px;
-    border: 2px solid gray;
-    border-radius: 20px;
-    background-color: #ededed;
-    margin-bottom: 17px;
+  display: inline-block;
+  font-size: 25px;
+  padding: 15px;
+  border: 2px solid gray;
+  border-radius: 20px;
+  background-color: #ededed;
+  margin-bottom: 17px;
 }
+
+
+/* 오늘의 작품&느낌 */
+.work{
+  background-image: 
+  linear-gradient(45deg,rgb(236, 142, 255) 22%,rgb(255, 232, 28) 56%,rgb(145, 128, 255) 85%);
+}
+
+/* 
+    그라데이션 -> 배경 이미지속성에 쓴다!
+    (왜? 예전에 모두 이미지로 만들었으니까!!!)
+
+    [ 선형 그라데이션 : linear-gradient ]
+    linear-gradient(방향,색1,색2,...);
+    linear-gradient(방향,색1 몇%,색2 몇%,...);
+    linear-gradient(각도,색1 몇%,색2 몇%,...);
+    - 옵션 : 
+    1. 방향: to top, to bottom, to left, to right
+    2. 각도: 각도deg
+    3. 콤마로 나열된 색상 뒤에 %수치를 쓰면 비율조정가능
+*/
