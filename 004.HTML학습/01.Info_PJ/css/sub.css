@@ -294,6 +294,15 @@
   content: '🎃';
 }
 
+/* 랭킹뉴스 박스 */
+.rank-news ol {
+  /* 리스트 스타일 숫자형으로 다시사용
+   ol요소의 기본auto 스타일은 decimal 즉, 숫자형 */
+  list-style: auto;
+  /* 기본 왼쪽패딩을 초기화했으므로 다시 조정함 */
+  padding-left: 10px;
+}
+
 
 /* 오늘의 작품&느낌 */
 .work{
