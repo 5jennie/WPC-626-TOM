@@ -329,7 +329,7 @@
 .sec-news dt{
   /* 박스설정 */
   display: block;
-  width: 120px;
+  width: 85px;
   /* 가로크기를 안주고 자동으로
   내용만큼 박스 크기를 잡으려고
   display를 inline-block으로 했었으나
@@ -342,10 +342,12 @@
   border-radius: 50%;
   text-align: center;
   background-color: lightcoral;
+  /* 타이틀 글자 랩핑방지(글자줄바꿈방지) */
+  white-space: nowrap;
 
   /* 글자설정 */
   font-family: "Jua", sans-serif;
-  font-size: 32px;
+  font-size: 25px;
 }
 
 /*  */
