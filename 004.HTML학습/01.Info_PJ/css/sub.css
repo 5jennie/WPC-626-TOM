@@ -381,6 +381,20 @@
   font-size: 25px;
 }
 
+/* 개별적으로 dt를 선택하여 글자색, 배경색 바꾸기 */
+.sec-news dl:first-child dt:first-of-type{
+  color: red;
+  background-color: lightgreen;
+}
+.sec-news dl:nth-child(2) dt:first-of-type{
+  color: blue;
+  background-color: lightsalmon;
+}
+.sec-news dl:last-child dt:first-of-type{
+  color: green;
+  background-color: lightblue;
+}
+
 /* dd - 용어설명박스
 dd타입중에 첫번째 선택하기 
 
