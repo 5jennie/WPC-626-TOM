@@ -328,7 +328,7 @@
 /* dt - 분류타이틀 */
 .sec-news dt{
   /* 박스설정 */
-  display: block;
+  /* display: block; -> dt는 원래 block임! */
   width: 85px;
   /* 가로크기를 안주고 자동으로
   내용만큼 박스 크기를 잡으려고
@@ -344,6 +344,14 @@
   background-color: lightcoral;
   /* 타이틀 글자 랩핑방지(글자줄바꿈방지) */
   white-space: nowrap;
+
+  /* dt박스 옆으로 dd가 올라오도록
+  나는 왼쪽(left) 너는 오른쪽으로 올라와!
+  흘러가는 속성 float:left */
+  float: left;
+  /* 다른 블록요소에 영향을 주므로
+  부모박스인 dl에 overflow:hidden으로
+  이를 차단한다! */
 
   /* 글자설정 */
   font-family: "Jua", sans-serif;
