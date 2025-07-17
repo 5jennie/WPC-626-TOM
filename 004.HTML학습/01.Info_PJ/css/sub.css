@@ -419,6 +419,34 @@ dd타입중에 첫번째 선택하기
   /* 윈도우 이모지는 윈도우키+콤마(.) */
 }
 
+/* 포토뉴스 박스 */
+/* 전체 테이블 */
+.photo-news table {
+    max-width: 500px;
+    margin: 0 auto;
+    border: 2px solid #ccc;
+    border-collapse: collapse;
+}
+/* td 비율 설정 */
+.photo-news td:nth-child(1){
+  width: 10%;
+}
+.photo-news td:nth-child(2){
+  width: 60%;
+}
+.photo-news td:nth-child(3){
+  width: 30%;
+}
+/* a글자 셋팅변경 */
+.photo-news a{
+  /* 줄바꿈 다시 허용! */
+  white-space: normal;
+}
+/* 테이블 이미지 */
+.photo-news img{
+  width: 100%;
+}
+
 /* 오늘의 작품&느낌 */
 .work {
   background-image: linear-gradient(
