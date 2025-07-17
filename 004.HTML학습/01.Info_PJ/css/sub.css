@@ -439,12 +439,17 @@ dd타입중에 첫번째 선택하기
 }
 /* a글자 셋팅변경 */
 .photo-news a{
+  /* 공통뉴스 .news-box에서 
+  줄바꿈방지 셋팅했었음! */
   /* 줄바꿈 다시 허용! */
   white-space: normal;
 }
 /* 테이블 이미지 */
 .photo-news img{
   width: 100%;
+  /* 이미지 비율 강제 설정속성
+  aspect-ratio 값을 2/1 가로:세로 가 2:1임 */
+  aspect-ratio: 4/3;
 }
 
 /* 오늘의 작품&느낌 */
