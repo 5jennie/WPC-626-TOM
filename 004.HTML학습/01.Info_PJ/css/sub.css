@@ -324,6 +324,33 @@
   padding-left: 10px;
 }
 
+/* 분야별 뉴스 박스 */
+/* dt - 분류타이틀 */
+.sec-news dt{
+  /* 박스설정 */
+  display: block;
+  width: 120px;
+  /* 가로크기를 안주고 자동으로
+  내용만큼 박스 크기를 잡으려고
+  display를 inline-block으로 했었으나
+  가로 크기를 정할 경우 block으로
+  해도 무방하다! */
+  margin: 25px 0 10px;
+  padding: 20px;
+  border: 3px dashed #000;
+  /* 원형보더는 값이 50%임! (bdrs50p) */
+  border-radius: 50%;
+  text-align: center;
+  background-color: lightcoral;
+
+  /* 글자설정 */
+  font-family: "Jua", sans-serif;
+  font-size: 32px;
+}
+
+/*  */
+
+
 
 /* 오늘의 작품&느낌 */
 .work{
