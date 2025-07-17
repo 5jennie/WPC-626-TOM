@@ -381,16 +381,18 @@
   font-size: 25px;
 }
 
-/* 개별적으로 dt를 선택하여 글자색, 배경색 바꾸기 */
-.sec-news dl:first-child dt:first-of-type{
+/* 개별적으로 dt를 선택하여 글자색, 배경색 바꾸기
+-> 이때 dl은 다른 h3형제 요소와 섞여 있으므로
+child선택자가 아닌 of type선택자를 써야한다! */
+.sec-news dl:first-of-type dt{
   color: red;
   background-color: lightgreen;
 }
-.sec-news dl:nth-child(2) dt:first-of-type{
+.sec-news dl:nth-of-type(2) dt{
   color: blue;
   background-color: lightsalmon;
 }
-.sec-news dl:last-child dt:first-of-type{
+.sec-news dl:last-of-type dt{
   color: green;
   background-color: lightblue;
 }
