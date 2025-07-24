@@ -10,3 +10,17 @@
 body{
     background-color: #000;
 }
+
+/* 1. 상단영역 */
+/* 겉박스 */
+#top-area{
+    background-color: #fff;
+}
+/* 속박스 */
+.top-area{
+
+}
+/* 로고이미지 */
+.logo{
+    width: 100%;
+} 
